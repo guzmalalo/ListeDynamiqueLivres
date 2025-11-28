@@ -41,7 +41,7 @@ void ajouterLivreDynamique(ListeLivres* liste)
     printf("Donnez l'auteur: ");
     fgets(s, sizeof(char) * MAX_NOM, stdin);
     s[strlen(s) - 1] = '\0';
-    strcpy(liste->tab[i].titre, s);
+    strcpy(liste->tab[i].auteur, s);
 
     printf("Donnez l'isbn: ");
     scanf("%d", &(liste->tab[i].isbn));
